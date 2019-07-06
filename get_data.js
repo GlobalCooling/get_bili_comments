@@ -4,7 +4,7 @@ const fs=require('fs');
 var url1='https://api.bilibili.com/x/v2/reply?&jsonp=jsonp&pn=';
 var url2='&type=11&oid=动态的id号码&sort=2&_=1562316459358'; //需要根据情况修改
 
-var page_num=0;//评论总页数
+var page_num=0;//评论总页数，根据情况修改
 fs.writeFileSync('name.csv', '\ufeff'+'用户ID,评论内容\n');//写BOM头\ufeff，不然csv文件中文乱码
 
 function get_data(num){
